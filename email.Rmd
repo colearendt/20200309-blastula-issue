@@ -1,0 +1,9 @@
+---
+title: "test-email"
+output: blastula::blastula_email
+---
+
+
+```{r obj}
+ggplot(iris) + geom_point(aes(Sepal.Length, Sepal.Width))
+```

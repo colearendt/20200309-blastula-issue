@@ -1,0 +1,17 @@
+---
+title: "test"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r render_custom_email}
+library(blastula)
+library(ggplot2)
+render_connect_email(input = "email.Rmd") %>%
+  attach_connect_email(
+    subject =  "test",
+    attach_output = TRUE
+  )
+```
